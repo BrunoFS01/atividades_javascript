@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 7</title>
+</head>
+<body>
+    <h1>Prática JavaScript 7 - 3 tentativas</h1>
+
+    <script>
+        let usuario
+        let senha
+
+        for (tentativa = 0; tentativa <=2; tentativa++){
+
+            let usuario = prompt("Digite seu nome de usuário");
+            let senha = prompt("Digite a senha");
+
+            if (usuario == "admin" && senha == "1234") {
+                alert("Acesso permitido.");
+                break;
+            } else {
+                alert("Acesso negado.");
+            }
+        }
+    </script>
+</body>
+</html>

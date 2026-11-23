@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 10</title>
+</head>
+<body>
+    <h1>Prática JavaScript 10 - Função Média Notas</h1>
+
+    <script>
+        function Media(nota1, nota2) {
+        nota1 = Number(prompt("Digite a primeira nota: "));
+        nota2 = Number(prompt("Digite a segunda nota: "));
+        med = (nota1 + nota2) / 2;
+
+        if (med >= 7) {
+            alert("Média do aluno: " + med + " - Aprovado.");
+        } else if (med >=5){
+            alert("Média do aluno: " + med + " - Recuperação.");
+        } else {
+            alert("Média do aluno: " + med + " - Reprovado.");
+        }
+    }
+
+    Media();
+
+    </script>
+</body>
+</html>
