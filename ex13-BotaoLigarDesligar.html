@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 13</title>
+</head>
+<body>
+    <h1>Prática JavaScript 13 - Botões Ligar e Desligar</h1>
+
+    <!-- Botão e parágrafo vazio -->
+    <button id="btn1">Ligar</button>
+    <button id="btn2">Desligar</button>
+    <p id="mensagem"></p>
+
+    <!-- JavaScript com o evento -->
+    <script>
+
+    const botao1 = document.getElementById("btn1");
+    const mensagem1 = document.getElementById("mensagem");
+
+    const botao2 = document.getElementById("btn2");
+    const mensagem2 = document.getElementById("mensagem");
+
+    botao1.addEventListener("click", function() {
+        mensagem1.textContent = "Ligado!";
+    });
+    botao2.addEventListener("click", function() {
+        mensagem2.textContent = "Desligado!";
+    });
+
+    </script>
+</body>
+</html>

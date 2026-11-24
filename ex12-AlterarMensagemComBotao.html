@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 12</title>
+</head>
+<body>
+    <h1>Prática JavaScript 12 - Alterar parágrafo com botão</h1>
+
+    <!-- Botão e parágrafo vazio -->
+    <button id="btn">Clique aqui</button>
+    <p id="mensagem"></p>
+
+    <!-- JavaScript com o evento -->
+    <script>
+
+    const botao = document.getElementById("btn");
+    const mensagem = document.getElementById("mensagem");
+
+    let contador = 0;
+    botao.addEventListener("click", function() {
+        contador = contador + 1;
+        if(contador == 1) {
+        mensagem.textContent = "Evento executado com sucesso!";
+        } else if(contador == 2) {
+        mensagem.textContent = "Bem-vindo!";
+        } else {
+        mensagem.textContent = "Você está aprendendo JavaScript!";
+        contador = 0;
+        }
+
+    });
+
+    </script>
+</body>
+</html>
