@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 14</title>
+</head>
+<body>
+    <h1>Prática JavaScript 14 - Input Botão</h1>
+
+    <input type="text" id="campo-texto" placeholder="Digite algo...">
+    <button id="btn">Clique aqui</button>
+    <h2 id="mensagem">Mensagem Padrão</p>
+
+
+    <!-- JavaScript com o evento -->
+    <script>
+
+    const mensagem = document.getElementById("mensagem");
+    const caixa = document.getElementById("campo-texto");
+    const botao = document.getElementById("btn");
+
+    document.getElementById(botao.addEventListener("click", function() {
+        mensagem.textContent = "Evento executado com sucesso!";
+    }));
+
+    </script>
+</body>
+</html>
