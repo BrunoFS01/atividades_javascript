@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 17</title>
+</head>
+<body id="fundo">
+    <h1>Prática JavaScript 17 - Galeria de cores</h1>
+
+    <!-- Botões de cores -->
+    <button id="btn1">Azu</button>
+    <button id="btn2">Vermelho</button>
+    <button id="btn3">Amarelo</button>
+
+    <!-- JavaScript com o evento -->
+    <script>
+
+    const botao1 = document.getElementById("btn1");
+
+    const botao2 = document.getElementById("btn2");
+
+    const botao3 = document.getElementById("btn3");
+
+    const fundo = document.getElementById("fundo");
+
+    botao1.addEventListener("click", function() {
+        fundo.style.backgroundColor = "blue";
+    });
+
+        botao2.addEventListener("click", function() {
+        fundo.style.backgroundColor = "red";
+    });
+
+        botao3.addEventListener("click", function() {
+        fundo.style.backgroundColor = "yellow";
+    });
+    </script>
+</body>
+</html>

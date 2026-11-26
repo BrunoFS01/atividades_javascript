@@ -12,7 +12,6 @@
     <button id="btn">Clique aqui</button>
     <h2 id="mensagem">Mensagem Padrão</p>
 
-
     <!-- JavaScript com o evento -->
     <script>
 
@@ -21,7 +20,7 @@
     const botao = document.getElementById("btn");
 
     document.getElementById(botao.addEventListener("click", function() {
-        mensagem.textContent = "Evento executado com sucesso!";
+        mensagem.textContent = caixa.value;
     }));
 
     </script>

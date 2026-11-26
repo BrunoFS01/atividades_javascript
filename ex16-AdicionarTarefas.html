@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 16</title>
+</head>
+<body>
+    <h1>Prática JavaScript 16 - Botão de adicionar tarefas</h1>
+
+    <input type="text" id="campo-texto" placeholder="Digite uma tarefa...">
+
+    <div id="painel">
+    <button id="btn">Adicionar Tarefa</button>
+    </div>
+
+    <!-- JavaScript com o evento -->
+    <script>
+
+    const painel = document.getElementById("painel");
+    const botao = document.getElementById("btn");
+    const campo = document.getElementById("campo-texto");
+
+    document.getElementById(botao.addEventListener("click", function() {
+        const novaTarefa = document.createElement('div');
+
+        novaTarefa.textContent = campo.value;
+        novaTarefa.style.backgroundColor = "antiquewhite";
+        novaTarefa.style.padding = "12px";
+        novaTarefa.style.marginTop = "12px";
+        novaTarefa.style.cursor = "pointner";
+
+        novaTarefa.addEventListener("click", function()  {
+            novaTarefa.remove();
+        });
+        
+        painel.appendChild(novaTarefa);
+
+    }));
+
+    </script>
+</body>
+</html>

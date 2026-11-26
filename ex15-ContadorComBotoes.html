@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 15</title>
+</head>
+<body>
+    <h1>Prática JavaScript 15 - Contador com botões</h1>
+
+    <!-- Botão e parágrafo com 0 -->
+    <button id="btn1">+</button>
+    <button id="btn2">-</button>
+    <p id="numero">0</p>
+
+    <!-- JavaScript com o evento -->
+    <script>
+
+    let valor = 0;
+
+    const botao1 = document.getElementById("btn1");
+    const numero1 = document.getElementById("numero");
+
+    const botao2 = document.getElementById("btn2");
+    const numero2 = document.getElementById("numero");
+
+    botao1.addEventListener("click", function() {
+        numero1.textContent = valor = valor + 1;
+        if(valor >= 0){
+            numero1.style.color = "#FF0000";
+    }
+    });
+    botao2.addEventListener("click", function() {
+        numero2.textContent = valor = valor - 1;
+        if(valor < 0){
+            numero2.style.color = "#0000FF";
+    }
+    });
+
+    </script>
+</body>
+</html>
